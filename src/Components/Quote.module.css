@@ -1,0 +1,20 @@
+.quote_container {
+  font-family: 'Comic Neue', cursive;
+  font-size: 22px;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.quote_container .author {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(233, 138, 30);
+}
+
+.error {
+  color: red;
+  font-size: 30px;
+  font-weight: 700;
+}
