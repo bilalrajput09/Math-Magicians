@@ -39,7 +39,7 @@ const Calculator = () => {
               onClick={calculateHandler}
               style={{ background: 'orange' }}
             >
-              /
+              ÷
             </button>
             <button type="button" onClick={calculateHandler}>
               7
@@ -55,7 +55,7 @@ const Calculator = () => {
               onClick={calculateHandler}
               style={{ background: 'orange' }}
             >
-              X
+              x
             </button>
             <button type="button" onClick={calculateHandler}>
               4
