@@ -22,17 +22,8 @@
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-header {
-  padding: 1em;
-  display: flex;
-  justify-content: flex-end;
-  font-weight: 700;
-  background-color: grey;
-  font-size: 30px;
-}
-
-.calculator_main div {
-  padding: 1em;
+.calculator_main button {
+  padding: 2em 1em;
   font-weight: 700;
   text-align: center;
   border: 1px solid rgb(88, 87, 87);
@@ -43,8 +34,8 @@ header {
   display: flex;
 }
 
-.calculator_footer div {
-  padding: 1em;
+.calculator_footer button {
+  padding: 2em 1em;
   font-weight: 700;
   text-align: center;
   border: 1px solid rgb(88, 87, 87);
@@ -57,4 +48,20 @@ header {
 
 .footer_remaining {
   width: 25%;
+}
+
+.header {
+  padding: 1em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: 700;
+  background-color: grey;
+  font-size: 30px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.small {
+  font-size: small;
 }

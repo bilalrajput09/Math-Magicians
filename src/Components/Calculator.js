@@ -1,40 +1,123 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Calculator.module.css';
+import calculate from '../logic/calculate';
 
-const Calculator = () => (
-  <div className={styles.calculator_container}>
-    <header>0</header>
-    <main>
-      <div className={styles.calculator_main}>
-        <div>AC</div>
-        <div>+/-</div>
-        <div>%</div>
-        <div style={{ background: 'orange' }}>/</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-        <div style={{ background: 'orange' }}>X</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div style={{ background: 'orange' }}>-</div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div style={{ background: 'orange' }}>+</div>
+const Calculator = () => {
+  const [currentState, setCurrentState] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
+  const calculateHandler = (e) => {
+    const updatedState = calculate(currentState, e.target.textContent);
+    setCurrentState(updatedState);
+  };
+
+  return (
+    <>
+      <div className={styles.calculator_container}>
+        <header className={styles.header}>
+          <span>{currentState.total || currentState.next || 0}</span>
+          <span className={styles.small}>
+            {currentState.operation || ''}
+            {currentState.next || ''}
+          </span>
+        </header>
+        <main>
+          <div className={styles.calculator_main}>
+            <button type="button" onClick={calculateHandler}>
+              AC
+            </button>
+            <button type="button" onClick={calculateHandler}>
+              +/-
+            </button>
+            <button type="button" onClick={calculateHandler}>
+              %
+            </button>
+            <button
+              type="button"
+              onClick={calculateHandler}
+              style={{ background: 'orange' }}
+            >
+              /
+            </button>
+            <button type="button" onClick={calculateHandler}>
+              7
+            </button>
+            <button type="button" onClick={calculateHandler}>
+              8
+            </button>
+            <button type="button" onClick={calculateHandler}>
+              9
+            </button>
+            <button
+              type="button"
+              onClick={calculateHandler}
+              style={{ background: 'orange' }}
+            >
+              X
+            </button>
+            <button type="button" onClick={calculateHandler}>
+              4
+            </button>
+            <button type="button" onClick={calculateHandler}>
+              5
+            </button>
+            <button type="button" onClick={calculateHandler}>
+              6
+            </button>
+            <button
+              type="button"
+              onClick={calculateHandler}
+              style={{ background: 'orange' }}
+            >
+              -
+            </button>
+            <button type="button" onClick={calculateHandler}>
+              1
+            </button>
+            <button type="button" onClick={calculateHandler}>
+              2
+            </button>
+            <button type="button" onClick={calculateHandler}>
+              3
+            </button>
+            <button
+              type="button"
+              onClick={calculateHandler}
+              style={{ background: 'orange' }}
+            >
+              +
+            </button>
+          </div>
+          <div className={styles.calculator_footer}>
+            <button
+              type="button"
+              onClick={calculateHandler}
+              className={styles.footer_zero}
+            >
+              0
+            </button>
+            <button
+              type="button"
+              onClick={calculateHandler}
+              className={styles.footer_remaining}
+            >
+              .
+            </button>
+            <button
+              type="button"
+              onClick={calculateHandler}
+              className={styles.footer_remaining}
+              style={{ background: 'orange' }}
+            >
+              =
+            </button>
+          </div>
+        </main>
       </div>
-      <div className={styles.calculator_footer}>
-        <div className={styles.footer_zero}>0</div>
-        <div className={styles.footer_remaining}>.</div>
-        <div
-          className={styles.footer_remaining}
-          style={{ background: 'orange' }}
-        >
-          =
-        </div>
-      </div>
-    </main>
-  </div>
-);
+    </>
+  );
+};
 
 export default Calculator;
