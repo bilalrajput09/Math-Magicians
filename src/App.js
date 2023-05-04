@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 
-import Qoute from './Components/Quote';
 import Calculator from './Components/Calculator';
+import Qoute from './Components/Quote';
 
 function App() {
   return (
