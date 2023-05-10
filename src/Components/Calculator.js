@@ -14,7 +14,8 @@ const Calculator = () => {
   };
 
   return (
-    <>
+    <div className={styles.calculator_main_container}>
+      <h1>Yeah do some math!</h1>
       <div className={styles.calculator_container}>
         <header className={styles.header}>
           <span>{currentState.total || currentState.next || 0}</span>
@@ -116,7 +117,7 @@ const Calculator = () => {
           </div>
         </main>
       </div>
-    </>
+    </div>
   );
 };
 

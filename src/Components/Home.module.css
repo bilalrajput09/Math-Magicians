@@ -1,0 +1,13 @@
+.home_main_container {
+  padding: 1.5em;
+  font-family: cursive;
+}
+
+.home_main_container h2 {
+  font-size: 30px;
+  margin: 1em 0;
+}
+
+.home_main_container p {
+  font-size: 20px;
+}
