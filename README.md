@@ -163,6 +163,12 @@ github pages
 - Twitter: [@bilal_rajput09](https://twitter.com/bilal_rajput09)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/bilal-ahmed-18b12019a/)
 
+👤 Nirere Marie Christelle
+- GitHub: [@Christelle-12](https://github.com/Christelle-12)
+- Twitter: [@Chr1Nirere](https://twitter.com/Chr1Nirere)
+- LinkedIn :[LinkedIn](https://www.linkedin.com/in/nirere-marie-christelle-9b139823b/)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->

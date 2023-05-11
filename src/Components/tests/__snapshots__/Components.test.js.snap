@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for Components Check the element on the page 1`] = `
+<div
+  data-testid="main-container"
+>
+  <div
+    class="quote_container"
+  >
+    <h1>
+      LOADING...
+    </h1>
+    <h3 />
+    <span
+      class="author"
+    />
+    <span
+      class="error"
+    />
+  </div>
+</div>
+`;
+
+exports[`Tests for Components Verify the content on Calculator page! 1`] = `
+<h1>
+  Yeah do some math!
+</h1>
+`;
+
+exports[`Tests for Components Verify the content on home page! 1`] = `
+<h2>
+  Welcome to our page!
+</h2>
+`;
