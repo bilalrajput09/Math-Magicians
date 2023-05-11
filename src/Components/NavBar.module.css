@@ -1,0 +1,29 @@
+.header {
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1.5em;
+  font-family: cursive;
+  font-weight: 700;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+}
+
+.links_contianer {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  font-size: 25px;
+}
+
+.links_contianer li {
+  border-right: 5px solid black;
+  padding: 0.5em;
+}

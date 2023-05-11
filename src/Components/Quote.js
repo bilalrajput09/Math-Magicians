@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './Quote.module.css';
 
-const Qoute = () => {
+const Quote = () => {
   const [qouteResult, setQouteResult] = useState([]);
   const [loadingState, setLoadingState] = useState(true);
   const [errorState, setErrorState] = useState(false);
@@ -34,7 +34,7 @@ const Qoute = () => {
     };
 
     fetchData();
-  }, [setQouteResult]);
+  }, []);
 
   return (
     <div className={styles.quote_container}>
@@ -50,4 +50,4 @@ const Qoute = () => {
   );
 };
 
-export default Qoute;
+export default Quote;
