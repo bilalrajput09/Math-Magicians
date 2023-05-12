@@ -9,6 +9,7 @@
   justify-content: space-between;
   max-width: 80vw;
   margin: 0 auto;
+  height: 500px;
 }
 
 .calculator_main_container h1 {
@@ -35,10 +36,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 240px;
 }
 
 .calculator_main button {
-  padding: 1em 0.5em;
   font-weight: 700;
   font-size: 20px;
   text-align: center;
@@ -67,7 +68,7 @@
 }
 
 .header {
-  padding: 1em;
+  padding: 0.5em;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
