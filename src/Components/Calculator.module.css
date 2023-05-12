@@ -9,7 +9,6 @@
   justify-content: space-between;
   max-width: 80vw;
   margin: 0 auto;
-  height: 500px;
 }
 
 .calculator_main_container h1 {
@@ -22,7 +21,7 @@
 
 .calculator_container {
   background-color: rgb(0, 0, 0);
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   padding: 1em;
   margin-top: 3em;
@@ -36,7 +35,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  height: 240px;
+  height: 210px;
 }
 
 .calculator_main button {
